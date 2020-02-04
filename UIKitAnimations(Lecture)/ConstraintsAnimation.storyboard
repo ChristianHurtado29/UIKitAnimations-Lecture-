@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Constraints Animation Controller-->
+        <scene sceneID="hJh-TV-oen">
+            <objects>
+                <viewController storyboardIdentifier="ConstraintsAnimationController" id="YcD-ad-9rk" customClass="ConstraintsAnimationController" customModule="UIKitAnimations_Lecture_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5qw-9Z-aXe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gY-y6-0IT">
+                                <rect key="frame" x="87" y="333" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9gY-y6-0IT" secondAttribute="height" multiplier="1:1" id="hhM-0x-J1q"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-Kj-7Vo">
+                                <rect key="frame" x="20" y="718" width="374" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDy-pU-RlI">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.54809570480000003" blue="0.56309264029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateUP:" destination="YcD-ad-9rk" eventType="touchUpInside" id="BvH-8Z-ccU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bly-ZV-acp">
+                                        <rect key="frame" x="207" y="0.0" width="167" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.54809570480000003" blue="0.56309264029999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="DOWN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateDOWN:" destination="YcD-ad-9rk" eventType="touchUpInside" id="OrM-hg-IcU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2Ko-NY-rug"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9gY-y6-0IT" firstAttribute="width" secondItem="5qw-9Z-aXe" secondAttribute="width" multiplier="0.57971" id="Css-3E-I2n"/>
+                            <constraint firstItem="rZg-Kj-7Vo" firstAttribute="leading" secondItem="zma-IG-ozE" secondAttribute="leading" constant="20" id="ImT-3I-iIN"/>
+                            <constraint firstItem="rZg-Kj-7Vo" firstAttribute="bottom" secondItem="zma-IG-ozE" secondAttribute="bottom" constant="-100" id="J0L-zt-3O8"/>
+                            <constraint firstItem="9gY-y6-0IT" firstAttribute="centerY" secondItem="zma-IG-ozE" secondAttribute="centerY" id="P6v-Pl-iNJ"/>
+                            <constraint firstItem="zma-IG-ozE" firstAttribute="trailing" secondItem="rZg-Kj-7Vo" secondAttribute="trailing" constant="20" id="mdg-Eq-oOR"/>
+                            <constraint firstItem="9gY-y6-0IT" firstAttribute="centerX" secondItem="zma-IG-ozE" secondAttribute="centerX" id="qi8-hD-TmA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zma-IG-ozE"/>
+                    </view>
+                    <connections>
+                        <outlet property="box" destination="9gY-y6-0IT" id="fI5-g4-W7K"/>
+                        <outlet property="viewCenterY" destination="P6v-Pl-iNJ" id="e0I-nx-4GI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Baw-bU-Xqa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-27.536231884057973" y="-34.151785714285715"/>
+        </scene>
+    </scenes>
+</document>
