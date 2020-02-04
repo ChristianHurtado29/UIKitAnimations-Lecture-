@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Property Animator Controller-->
+        <scene sceneID="wPO-VV-WXS">
+            <objects>
+                <viewController storyboardIdentifier="PropertyAnimatorController" id="uWe-ER-Pdl" customClass="PropertyAnimatorController" customModule="UIKitAnimations_Lecture_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dv7-dX-6eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck" translatesAutoresizingMaskIntoConstraints="NO" id="wvV-Ha-Gyf">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="U6m-C0-n0X"/>
+                                    <constraint firstAttribute="width" secondItem="wvV-Ha-Gyf" secondAttribute="height" multiplier="1:1" id="ob2-ge-tN6"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tSX-80-saU">
+                                <rect key="frame" x="38" y="712" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="uWe-ER-Pdl" eventType="valueChanged" id="Fzs-Ao-nhZ"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wvV-Ha-Gyf" firstAttribute="centerX" secondItem="dv7-dX-6eZ" secondAttribute="centerX" id="AER-Qh-TXu"/>
+                            <constraint firstItem="IE0-Bt-sjT" firstAttribute="trailing" secondItem="tSX-80-saU" secondAttribute="trailing" constant="40" id="IpU-S0-wXb"/>
+                            <constraint firstItem="wvV-Ha-Gyf" firstAttribute="centerY" secondItem="dv7-dX-6eZ" secondAttribute="centerY" id="M44-ce-EoZ"/>
+                            <constraint firstItem="IE0-Bt-sjT" firstAttribute="bottom" secondItem="tSX-80-saU" secondAttribute="bottom" constant="120" id="dxV-46-RD9"/>
+                            <constraint firstItem="tSX-80-saU" firstAttribute="leading" secondItem="IE0-Bt-sjT" secondAttribute="leading" constant="40" id="f6v-aV-rlM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IE0-Bt-sjT"/>
+                    </view>
+                    <connections>
+                        <outlet property="duckImage" destination="wvV-Ha-Gyf" id="r00-mP-kRN"/>
+                        <outlet property="slider" destination="tSX-80-saU" id="ydV-Le-gOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5s-lW-nDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="-49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duck" width="800" height="800"/>
+    </resources>
+</document>

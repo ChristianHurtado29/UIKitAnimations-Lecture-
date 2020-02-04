@@ -32,6 +32,16 @@ class AnimationsTabController: UITabBarController {
         VC.tabBarItem = UITabBarItem(title: "Constraint Animes", image: UIImage(systemName: "3.circle"), tag: 2)
         return VC
     }()
+    
+    private lazy var propertyAnimatorVC: PropertyAnimatorController = {
+        let constraintStoryboard = UIStoryboard(name: "PropertyAnimator", bundle: nil)
+        
+        guard let VC = constraintStoryboard.instantiateViewController(identifier: "PropertyAnimatorController") as? PropertyAnimatorController else {
+            fatalError("could not load this")
+        }
+        VC.tabBarItem = UITabBarItem(title: "Property Animator", image: UIImage(systemName: "4.circle"), tag: 3)
+        return VC
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +50,6 @@ class AnimationsTabController: UITabBarController {
     }
     
     private func setUpTabBarControllers() {
-        viewControllers = [simpleAnimationVC, constraintAnimationVC, transitionAnimationVC]
+        viewControllers = [simpleAnimationVC, constraintAnimationVC, transitionAnimationVC, propertyAnimatorVC]
     }
 }

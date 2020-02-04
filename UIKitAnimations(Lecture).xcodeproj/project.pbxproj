@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1343D0CC23E9D75500CFC68E /* PropertyAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343D0CB23E9D75500CFC68E /* PropertyAnimatorController.swift */; };
+		1343D0CE23E9D76900CFC68E /* PropertyAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1343D0CD23E9D76900CFC68E /* PropertyAnimator.storyboard */; };
 		B75220F323E47E2600BB661B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75220F223E47E2600BB661B /* AppDelegate.swift */; };
 		B75220F523E47E2600BB661B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75220F423E47E2600BB661B /* SceneDelegate.swift */; };
 		B75220FC23E47E2A00BB661B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75220FB23E47E2A00BB661B /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1343D0CB23E9D75500CFC68E /* PropertyAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorController.swift; sourceTree = "<group>"; };
+		1343D0CD23E9D76900CFC68E /* PropertyAnimator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PropertyAnimator.storyboard; sourceTree = "<group>"; };
 		B75220EF23E47E2600BB661B /* UIKitAnimations(Lecture).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKitAnimations(Lecture).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75220F223E47E2600BB661B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75220F423E47E2600BB661B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1343D0CF23E9D7A800CFC68E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B752210623E47FA000BB661B /* AnimationsTabController.swift */,
+				B752210823E4807900BB661B /* SimpleAnimeController.swift */,
+				B7F73E5A23E9CB280063B49F /* TransitionAnimationsController.swift */,
+				1343D0CB23E9D75500CFC68E /* PropertyAnimatorController.swift */,
+				B752210A23E4809700BB661B /* ConstraintsAnimationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B75220E623E47E2600BB661B = {
 			isa = PBXGroup;
 			children = (
@@ -68,13 +84,11 @@
 			children = (
 				B75220F223E47E2600BB661B /* AppDelegate.swift */,
 				B75220F423E47E2600BB661B /* SceneDelegate.swift */,
-				B752210623E47FA000BB661B /* AnimationsTabController.swift */,
-				B752210823E4807900BB661B /* SimpleAnimeController.swift */,
-				B7F73E5A23E9CB280063B49F /* TransitionAnimationsController.swift */,
+				1343D0CF23E9D7A800CFC68E /* Controllers */,
 				B7F73E5C23E9CB490063B49F /* TransitionAnimations.storyboard */,
+				1343D0CD23E9D76900CFC68E /* PropertyAnimator.storyboard */,
 				B752210E23E49B7500BB661B /* ConstraintsAnimation.storyboard */,
 				B752210C23E486BB00BB661B /* SampleAnimationView.swift */,
-				B752210A23E4809700BB661B /* ConstraintsAnimationController.swift */,
 				B75220FB23E47E2A00BB661B /* Assets.xcassets */,
 				B75220FD23E47E2A00BB661B /* LaunchScreen.storyboard */,
 				B752210023E47E2A00BB661B /* Info.plist */,
@@ -142,6 +156,7 @@
 			files = (
 				B7F73E5D23E9CB490063B49F /* TransitionAnimations.storyboard in Resources */,
 				B75220FF23E47E2A00BB661B /* LaunchScreen.storyboard in Resources */,
+				1343D0CE23E9D76900CFC68E /* PropertyAnimator.storyboard in Resources */,
 				B75220FC23E47E2A00BB661B /* Assets.xcassets in Resources */,
 				B752210F23E49B7500BB661B /* ConstraintsAnimation.storyboard in Resources */,
 			);
@@ -160,6 +175,7 @@
 				B752210923E4807900BB661B /* SimpleAnimeController.swift in Sources */,
 				B75220F523E47E2600BB661B /* SceneDelegate.swift in Sources */,
 				B752210B23E4809700BB661B /* ConstraintsAnimationController.swift in Sources */,
+				1343D0CC23E9D75500CFC68E /* PropertyAnimatorController.swift in Sources */,
 				B7F73E5B23E9CB280063B49F /* TransitionAnimationsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
