@@ -31,12 +31,25 @@ class TransitionAnimationsController: UIViewController {
     }
     
     @objc private func animate(){
+        let duration: Double = 1.8
+        let curveOption: UIView.AnimationOptions = .curveEaseInOut
+        
+        // the four built-in bezier animations curves
+        // curveEaseIn
+        // curveEaseOut
+        // curveLinear
+        
+        
         if imageView.image == UIImage(named: "dog"){
+            UIView.transition(with: imageView, duration: duration, options: [.transitionFlipFromRight, curveOption], animations:  {
+                self.imageView.image = UIImage(named: "cat")
+            } , completion: nil)
             imageView.image = UIImage(named: "cat")
         } else {
-            imageView.image = UIImage(named: "dog")
+                UIView.transition(with: imageView, duration: 1.0, options: [.transitionFlipFromLeft], animations:  {
+                    self.imageView.image = UIImage(named: "dog")
+                } , completion: nil)
         }
-        print("animate")
     }
     
     
