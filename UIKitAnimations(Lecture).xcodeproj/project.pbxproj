@@ -63,6 +63,17 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		1343D0D023E9E54B00CFC68E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B7F73E5C23E9CB490063B49F /* TransitionAnimations.storyboard */,
+				1343D0CD23E9D76900CFC68E /* PropertyAnimator.storyboard */,
+				B752210E23E49B7500BB661B /* ConstraintsAnimation.storyboard */,
+				B75220FD23E47E2A00BB661B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B75220E623E47E2600BB661B = {
 			isa = PBXGroup;
 			children = (
@@ -85,12 +96,9 @@
 				B75220F223E47E2600BB661B /* AppDelegate.swift */,
 				B75220F423E47E2600BB661B /* SceneDelegate.swift */,
 				1343D0CF23E9D7A800CFC68E /* Controllers */,
-				B7F73E5C23E9CB490063B49F /* TransitionAnimations.storyboard */,
-				1343D0CD23E9D76900CFC68E /* PropertyAnimator.storyboard */,
-				B752210E23E49B7500BB661B /* ConstraintsAnimation.storyboard */,
+				1343D0D023E9E54B00CFC68E /* Storyboards */,
 				B752210C23E486BB00BB661B /* SampleAnimationView.swift */,
 				B75220FB23E47E2A00BB661B /* Assets.xcassets */,
-				B75220FD23E47E2A00BB661B /* LaunchScreen.storyboard */,
 				B752210023E47E2A00BB661B /* Info.plist */,
 			);
 			path = "UIKitAnimations(Lecture)";
