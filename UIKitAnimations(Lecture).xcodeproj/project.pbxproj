@@ -55,10 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				B752210623E47FA000BB661B /* AnimationsTabController.swift */,
+				B752210A23E4809700BB661B /* ConstraintsAnimationController.swift */,
 				B752210823E4807900BB661B /* SimpleAnimeController.swift */,
 				B7F73E5A23E9CB280063B49F /* TransitionAnimationsController.swift */,
 				1343D0CB23E9D75500CFC68E /* PropertyAnimatorController.swift */,
-				B752210A23E4809700BB661B /* ConstraintsAnimationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
